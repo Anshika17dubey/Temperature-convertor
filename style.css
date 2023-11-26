@@ -1,0 +1,60 @@
+body{
+    margin-top: 600px;
+    margin-left: 500px;
+    text-align: center;
+}
+#section{
+    margin-left: 1000px;
+    font-size: xx-large;
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: coral;
+}
+h1{
+    padding-bottom: 1.5rem;
+    color: blueviolet;
+}
+input[type=number]{
+    cursor: cell;
+    color: blue
+    background-color: rgb(157, 196, 81);
+    font-size: x-large;
+    font-weight: 300;
+}
+#input-fahrenheit{
+    background-color: rgb(81, 196, 144);
+    font-size: x-large;
+    font-weight: 300;
+}
+#input-kelvin{
+    background-color: rgb(159, 113, 152);
+    font-size: x-large;
+    font-weight: 300;
+}
+.form-padding{
+    padding: 3rem 2rem;
+}
+
+::-webkit-input-placeholder{
+    color: bisque !important+;
+}
+::-moz-placeholder{
+    color: #FFFFFF !important;
+}
+:-ms-input-placeholder{
+    color: #FFFFFF !important;
+}
+:-moz-placeholder{
+    color: #FFFFFF !important;
+}
+footer{
+    padding-top: 2rem;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 0.4rem;
+    text-align: center;
+}
+.icons{
+    max-width: 50px;
+    height: auto;
+}
