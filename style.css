@@ -4,40 +4,49 @@
     margin-right: 10px;
     text-align: center;
 } */
+header{
+    background-color: #4b96c5; /* Blue background color */
+}
+nav {
+    background-color: #90bad3; /* Blue background color */
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    display: inline-block;
+    color: #fff; /* White text color */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #6d9dbd; /* Darker blue on hover */
+  }
+
+  /* Example for colorful navigation items */
+  nav a.facts { background-color: #ca2e1d; }
+  nav a.footer { background-color: #0fa34d; }
+  nav a.conver { background-color: #9f3f79; }
+
 header {
-    background-color: rgb(10, 195, 180)6)
+    background-color: rgb(113, 176, 170)6)
     color: #161616;
     padding: 20px; /* Adjust the padding as needed */
     text-align: left;
     font-size: 80px; /* Adjust the font size as needed */
 }
 
-nav {
-    background-color: #555555;
-    color: #cb4040;
-    padding: 10px;
-    float: right;
-    width: 20%; /* Adjust the width as needed */
-}
+
 
 section {
-    margin-left: 25%; /* Adjust to account for the width of the nav */
-    padding: 20px;
+    margin-left: 2%; /* Adjust to account for the width of the nav */
+    font-size: larger;
 }
 
-/* Style the navigation links */
-nav a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 8px;
-    margin-bottom: 5px;
-    border-bottom: 1px solid #fff;
-}
 
-nav a:hover {
-    background-color: #444;
-}
 #box1{
     margin-left: 600px;
     padding-bottom: 50px;
@@ -49,7 +58,12 @@ h1{
     font-size: 260%;
 }
 h2{
-    font-size: 450%;
+    font-size: 350%;
+}
+h3{
+    font-size: 350%;
+    text-align: center;
+    color: rgb(20, 6, 44);
 }
 input[type=number]{
     cursor: cell;
@@ -97,28 +111,36 @@ input[type=number]{
     text-align: center;
     background-color: rgb(112, 150, 168)3, 226);
 }
-#slideshow-container {
-    max-width: 800px;
+#slideshow {
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
     position: relative;
-    margin: auto;
-}
-
-.mySlides {
+    text-align: center; /* Center-align the images */
+  }
+  
+  .slide {
     display: none;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-/* Add styles for caption text */
-.text {
-    color: #fff;
-    font-size: 18px;
-    position: absolute;
-    bottom: 8px;
-    left: 8px;
-    width: 100%;
-    text-align: left;
-}
+    text-align: center;
+  }
+  
+  img {
+    width: 100%; /* Make the images take up the full width of their container */
+  height: auto;
+  display: block; /* Remove any default inline styles */
+  margin: 0 auto; /* Center-align the images within the slideshow container */
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  #prevBtn {
+    float: left;
+  }
+  
+  #nextBtn {
+    float: right;
+  }

@@ -42,31 +42,29 @@ const main = () =>{
 
 main();
 
-let slideIndex = 0;
-
-        function showSlides() {
-            let i;
-            const slides = document.getElementsByClassName("mySlides");
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            slideIndex++;
-
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000); // Change slide every 3 seconds
-        }
-
-        // Start the slideshow when the page loads
-        window.onload = function () {
-            showSlides();
-        };
-
-
-
-
+document.addEventListener('DOMContentLoaded', function () {
+    // Your existing code for temperature conversion
+  
+    // Slideshow logic
+    let currentSlide = 0;
+    showSlide(currentSlide);
+  
+    function showSlide(index) {
+      const slides = document.querySelectorAll('.slide');
+  
+      if (index >= slides.length) {
+        currentSlide = 0;
+      } else if (index < 0) {
+        currentSlide = slides.length - 1;
+      } else {
+        currentSlide = index;
+      }
+  
+      slides.forEach((slide) => (slide.style.display = 'none'));
+      slides[currentSlide].style.display = 'block';
+    }
+  
+    window.changeSlide = function (n) {
+      showSlide(currentSlide + n);
+    };
+  });

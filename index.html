@@ -10,6 +10,7 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="main.js">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
     
     <title>Temperature Convertor</title>
 </head>
@@ -17,11 +18,11 @@
     <header>
       Tempertaure Convertor
     </header>
-    <nav >
-            <a href="#facts">......facts </a>
-            <a href="#footer"> .....footer</a>
-            <a href="#box1">.....convertor</a>
-    </nav>
+    <nav>
+        <a href="#slideshow" class="facts">Facts</a>
+        <a href="#footer" class="footer">Footer</a>
+        <a href="#box1" class="conver">Convertor</a>
+      </nav>
     <section>
       <h2>Description</h2>
       <p>This is the temperature convertor website. You can give the temperature 
@@ -32,26 +33,33 @@
         to another, such as Celsius to Fahrenheit or vice versa. Here's a description of the key 
         features and components you might find on a temperature converter website:</p>
   </section>
-
-  <h1>Temperature Facts Slideshow</h1>
-
-    <div id="slideshow-container">
-        <!-- Slides -->
-        <div class="mySlides">
-            <img src="https://via.placeholder.com/800x400" alt="Temperature Fact 1">
-            <div class="text">Caption for Fact 1</div>
-        </div>
-
-        <div class="mySlides">
-            <img src="https://via.placeholder.com/800x400" alt="Temperature Fact 2">
-            <div class="text">Caption for Fact 2</div>
-        </div>
-
-        <div class="mySlides">
-            <img src="https://via.placeholder.com/800x400" alt="Temperature Fact 3">
-            <div class="text">Caption for Fact 3</div>
-        </div>
+  <h3>
+    FACTS
+  </h3>
+  <div id="slideshow">
+    <div class="slide">
+      <img src="fact1.jpg" alt="Fact 1">
+      <p>The highest recorded temperature on Earth is 134 degrees Fahrenheit (56.7 degrees Celsius), measured in Death Valley, California, USA.</p>
     </div>
+    <div class="slide">
+      <img src="fact2.jpg" alt="Fact 2">
+      <p>Water freezes at 0 degrees Celsius (32 degrees Fahrenheit) and boils at 100 degrees Celsius (212 degrees Fahrenheit) at sea level.</p>
+    </div>
+    <div class="slide">
+        <img src="fact3.jpg" alt="Fact 2">
+        <p>Water freezes at 0 degrees Celsius (32 degrees Fahrenheit) and boils at 100 degrees Celsius (212 degrees Fahrenheit) at sea level.</p>
+      </div>
+      <div class="slide">
+        <img src="fact4.jpg" alt="Fact 2">
+        <p>Water freezes at 0 degrees Celsius (32 degrees Fahrenheit) and boils at 100 degrees Celsius (212 degrees Fahrenheit) at sea level.</p>
+      </div>
+    <!-- Add more slides as needed -->
+
+    <button id="prevBtn" onclick="changeSlide(-1)">Previous</button>
+    <button id="nextBtn" onclick="changeSlide(1)">Next</button>
+  </div>
+
+  
     
 
 
@@ -70,6 +78,7 @@
             </div>
 
         </div>
+    
         <div id="facts">
 
         </div>
@@ -96,6 +105,9 @@
             <a href="https://www.openai.com/gpt" target="_blank">ChatGPT</a>
             </p>
         </footer>
+        
 
     </div>
+    <script src="main.js"></script>
+</body>
 </html>
