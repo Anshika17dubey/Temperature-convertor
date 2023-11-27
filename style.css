@@ -1,19 +1,55 @@
-body{
-    margin-top: 600px;
-    margin-left: 500px;
-    margin-right: 100px;
+/* body{
+    margin-top: 120px;
+    margin-left: 50px;
+    margin-right: 10px;
     text-align: center;
+} */
+header {
+    background-color: rgb(10, 195, 180)6)
+    color: #161616;
+    padding: 20px; /* Adjust the padding as needed */
+    text-align: left;
+    font-size: 80px; /* Adjust the font size as needed */
 }
-#section{
-    margin-left: 1000px;
-    font-size: xx-large;
-    font-style: oblique;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: coral;
+
+nav {
+    background-color: #555555;
+    color: #cb4040;
+    padding: 10px;
+    float: right;
+    width: 20%; /* Adjust the width as needed */
 }
+
+section {
+    margin-left: 25%; /* Adjust to account for the width of the nav */
+    padding: 20px;
+}
+
+/* Style the navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+#box1{
+    margin-left: 600px;
+    padding-bottom: 50px;
+}
+
 h1{
-    padding-bottom: 1.5rem;
-    color: blueviolet;
+    padding-bottom: 0.5rem;
+    color: rgb(76, 46, 104);
+    font-size: 260%;
+}
+h2{
+    font-size: 450%;
 }
 input[type=number]{
     cursor: cell;
@@ -22,13 +58,18 @@ input[type=number]{
     font-size: x-large;
     font-weight: 300;
 }
+#input-celcius{
+    background-color: rgb(121, 161, 143);
+    font-size: x-large;
+    font-weight: 300;
+}
 #input-fahrenheit{
-    background-color: rgb(81, 196, 144);
+    background-color: rgb(46, 156, 162);
     font-size: x-large;
     font-weight: 300;
 }
 #input-kelvin{
-    background-color: rgb(159, 113, 152);
+    background-color: rgb(5, 80, 93);
     font-size: x-large;
     font-weight: 300;
 }
@@ -48,17 +89,36 @@ input[type=number]{
 :-moz-placeholder{
     color: #FFFFFF !important;
 }
-footer{
+#footer{
     padding-top: 2rem;
     font-size: 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 0.4rem;
     text-align: center;
+    background-color: rgb(112, 150, 168)3, 226);
 }
-.icons{
-    max-width: 50px;
+#slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
     height: auto;
 }
-.300-px-wide {
-    width: 30px;
+
+/* Add styles for caption text */
+.text {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    width: 100%;
+    text-align: left;
 }
